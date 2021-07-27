@@ -1,0 +1,16 @@
+@import '../../../styles/variable.scss';
+
+.about-container{
+    width: 100%;
+    padding: 1em 1em;    
+}
+.about-box{
+    width: 100%;
+    background-color: $principal-bg;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 4px rgb(201, 201, 201);
+    padding: 1em 2em;
+    color: whitesmoke;
+    font-size: 1.3em;
+    
+}

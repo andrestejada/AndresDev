@@ -1,0 +1,101 @@
+@import '../../styles/variable.scss';
+
+nav{
+    width: 100%;
+    background-color: $principal-bg;
+    position: sticky;
+    top:0;
+    color: honeydew;
+    z-index: 10;
+    a{
+        color: rgb(194, 192, 192);
+        transition: all ease 0.5s ;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    padding: 0.8em 0.5em;
+}
+
+.logo-container{
+    flex-grow: 2;
+    
+    p{  
+        color: whitesmoke;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+.burger-menu{
+    flex-grow: 2;
+    color: whitesmoke;
+    display: none;
+
+    @media(max-width:768px){
+            display: block;
+            font-size: 2rem;
+    }
+    
+}
+.menu-container{
+    display: block;
+    @media(max-width:768px){
+        display: none;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-grow: 3;
+        background-color: #32445a;;
+        width: 100%;
+        .menu-box{ 
+            flex-flow: column nowrap;
+            align-items: center;
+            padding: 0.5em 0.8em;
+        }
+    }
+}
+
+
+.social-container{
+    flex-grow: 2;
+    text-align: right;
+
+    @media (max-width:768px) {
+        text-align: right;
+    }
+   a{
+       margin: 0.5em 0.5em;
+       width: max-content;
+       height: max-content;
+       svg{
+           width: 2em;
+           height: 1.5em;
+       }
+   }
+}
+.menu-box{
+    display: flex;
+    flex-flow: row nowrap;
+    
+    a {
+        font-size: 1.1em;
+        padding: 5px 10px;
+    }
+}
+
+
+.link-active{
+    color: white;
+}

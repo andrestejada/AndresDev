@@ -1,0 +1,86 @@
+@import '../../../styles/variable.scss';
+
+.info-container{
+    width: 100%;
+    padding: 1em 1em;
+}
+.info-box{
+    width: 100%;
+    background-color: $principal-bg;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 4px rgb(201, 201, 201);
+    padding: 1em 2em;
+    color: whitesmoke;
+    font-size: 1.3em;
+    @media (max-width:400px) {
+        padding: 0.5em 1em;
+    }
+}
+.img-container{
+    width: 100%;
+    text-align: center;
+}
+.info-img{
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-shadow: 1px 1px 6px 5px rgba(143, 143, 143, 0.137);
+    transition: 0.3s;
+    background-image: linear-gradient(103deg, rgba(89,0,255,1) 0%, rgba(0,82,167,1) 48%, rgba(0,24,117,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 300px 200px;   
+    background-position: center;
+    animation: borderMove 4s infinite;
+}
+
+.info-section{
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    p{
+        margin-left: 0.5em;
+        @media (max-width:400px) {
+            font-size: 17px;
+        }
+    }
+}
+
+.social-media-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+    div{
+        background-color: rgba(82, 0, 235, 0.527);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 1px 1px 6px 1px rgba(87, 87, 87, 0.301);
+        transition: all ease 0.5s;
+        border: transparent;
+        margin: 0 0.5em;
+        &:hover{
+            background-color: rgba(88, 39, 180, 0.616);
+        }
+        a{
+            color: white;
+        }
+    }
+}
+
+@keyframes borderMove {
+    25%{
+        background-position: 25% 50%;
+    }
+    50%{
+        background-position: 55% 50%;
+    }
+
+    75%{
+        background-position: 75% 50%;
+    }
+}

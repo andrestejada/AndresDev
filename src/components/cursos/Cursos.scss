@@ -1,0 +1,24 @@
+@import '../../styles/variable.scss';
+
+.card-container{
+    padding: 1em 1.2em;
+    color: white;
+    background-color: $principal-bg;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 4px rgb(201, 201, 201);
+    
+
+    p{
+        font-weight: bold;
+        color: rgb(180, 180, 180);
+        margin: 0.5em 0;
+        span{
+            color: white;
+            font-weight: normal;
+        }
+    }
+}
+
+.img-cursos{
+    border-radius: 10px;
+}

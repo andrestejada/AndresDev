@@ -1,0 +1,17 @@
+@import '../../styles/variable.scss';
+
+
+footer{
+    background-color: $principal-bg;
+    padding: 1em;
+}
+
+.footer-container{
+    width: 100%;
+    p{
+        text-align: center;
+        width: 100%;
+        color: rgb(131, 131, 131);
+        padding: 0.8em 0.5em;
+    }
+}
