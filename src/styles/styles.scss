@@ -62,3 +62,12 @@ p{
     font-size: 1.3em;
   }
 }
+
+.ProfileContainer{
+  display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    @media(max-width:768px){
+        flex-flow: column;
+    }
+}

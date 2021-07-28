@@ -15,7 +15,7 @@ const ProfileContainer = styled.div`
 
 const ProfileCard = () => {
     return (
-        <ProfileContainer style={{display:'flex'}} >
+        <ProfileContainer className='ProfileContainer' >
             <Info/>
             <AboutMe/>            
         </ProfileContainer>
