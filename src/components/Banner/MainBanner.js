@@ -9,7 +9,7 @@ const MainBanner = () => {
             allContentfulHome{
                 nodes{
                         principalPicture{
-                            gatsbyImageData(layout:FULL_WIDTH height:600)
+                            gatsbyImageData(layout:FULL_WIDTH)
                 }
             }
           }

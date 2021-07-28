@@ -1,5 +1,6 @@
 import { useStaticQuery ,graphql} from 'gatsby'
 import React from 'react'
+import Estudios from '../estudios/Estudios';
 import './AboutMe.scss'
 
 const AboutMe = () => {
@@ -21,6 +22,7 @@ const AboutMe = () => {
             <div className='about-box' >
                 <p>{query.allContentfulAboutme.nodes[0].aboutMe.aboutMe}</p>
             </div>
+            <Estudios/>
         </div>
     )
 }

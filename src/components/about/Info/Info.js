@@ -3,6 +3,7 @@ import './Info.scss';
 import {FaGithub , FaPhone,FaMapMarkerAlt ,FaEnvelope,FaInstagram ,FaLinkedin } from 'react-icons/fa'
 import { useStaticQuery ,graphql} from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Pasatiempos from '../../Pasatiempos/Pasatiempos';
 
 const Info = () => {
     const query = useStaticQuery(graphql`
@@ -44,6 +45,7 @@ const Info = () => {
                 <div> <a href='https://www.linkedin.com/in/andres-tejada-017b78202/'target='_blank'rel="noreferrer" > <FaLinkedin/> </a></div>
             </div>
             </div>
+            <Pasatiempos/>
         </div>
     )
 }
